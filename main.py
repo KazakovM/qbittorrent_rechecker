@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 from time import sleep
 from qbittorrent import Client
@@ -23,15 +24,16 @@ def main():
                     torrents = qb.torrents()
                     for torrent in torrents:
                         if torrent['state'] == 'stalled' and torrent['progress'] > 0.98:
-                            print(f'Torrent "{torrent["name"]}" is stuck. Rechecking...')
+                            print(f'{datetime.now()}: torrent "{torrent["name"]}" is stuck. Rechecking...')
                             qb.recheck(torrent['hash'])
                             sleep(300)
             except Exception as e:
-                print(f'Failed to get torrent list or recheck stuck torrent: {e}')
+                print(f'{datetime.now()}: Failed to get torrent list or recheck stuck torrent: {e}')
         except Exception as e:
-            print(f'Failed to establish connection: {e}')
+            print(f'{datetime.now()}: Failed to establish connection: {e}')
 
 
 if __name__ == "__main__":
+    print(f'{datetime.now()}: Starting script...')
     load_configs()
     main()
