@@ -1,17 +1,23 @@
+import json
 from time import sleep
 from qbittorrent import Client
 
-HOST = "localhost"
-PORT = "8081"
 
-##login and password are not needed if "bypass authentication for clients on localhost" is checked.
+def load_configs():
+    with open('config.json', 'r', encoding="UTF-8") as file:
+        js = json.load(file)
+        global HOST, PORT, LOGIN, PASSWORD
+        HOST = js["HOST"]
+        PORT = js["PORT"]
+        LOGIN = js["LOGIN"]
+        PASSWORD = js["PASSWORD"]
 
 
 def main():
     while True:
         try:
             qb = Client(f'http://{HOST}:{PORT}/')
-            qb.login()
+            qb.login(LOGIN, PASSWORD)
             try:
                 if qb is not None:
                     torrents = qb.torrents()
@@ -26,6 +32,6 @@ def main():
             print(f'Failed to establish connection: {e}')
 
 
-
 if __name__ == "__main__":
+    load_configs()
     main()
