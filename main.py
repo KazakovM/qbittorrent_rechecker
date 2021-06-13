@@ -23,7 +23,7 @@ def main():
                 if qb is not None:
                     torrents = qb.torrents()
                     for torrent in torrents:
-                        if torrent['state'] != 'stalledDL' and float(str(torrent["progress"])[0:3]) > 0.98:
+                        if torrent['state'] == 'stalledDL' and float(str(torrent["progress"])[0:4]) > 0.98:
                             print(f'{datetime.now()}: torrent "{torrent["name"]}" is stuck. Rechecking...')
                             qb.recheck(torrent['hash'])
                             sleep(300)
