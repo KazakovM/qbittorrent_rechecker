@@ -1,4 +1,3 @@
-from datetime import datetime
 import json
 from time import sleep, strftime, localtime
 from qbittorrent import Client
