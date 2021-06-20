@@ -30,9 +30,10 @@ def main():
                     for torrent in torrents:
                         sleep(2) #без задержки может вернуть "-1"
                         if (MIN_SIZE*1073741824 > torrent['size'] or torrent['size'] > MAX_SIZE*1073741824) and float(str(torrent["progress"])[0]) != 1:
-                            print(f'{get_time()}: Torrent "{torrent["name"]}" is out of size limit: {round(torrent["size"]/1073741824, 2)} GB. Deleting...')
-                            qb.delete_permanently(torrent['hash'])
-                            sleep(3)
+                            if torrent['size'] != 0:
+                                print(f'{get_time()}: Torrent "{torrent["name"]}" is out of size limit: {round(torrent["size"]/1073741824, 2)} GB. Deleting...')
+                                qb.delete_permanently(torrent['hash'])
+                                sleep(3)
                         if torrent['state'] == 'stalledDL' and float(str(torrent["progress"])[0:4]) > 0.98:
                             print(f'{get_time()}: Torrent "{torrent["name"]}" is stuck. Rechecking...')
                             qb.recheck(torrent['hash'])
