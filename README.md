@@ -22,4 +22,4 @@ _Группа в Telegram: https://t.me/btt_automation_
 ### _Протестированные VPS_:
 * [cp.zomro.com](https://zomro.com/?from=296803)
 * [vultr.com](https://www.vultr.com/?ref=8883507)
-* [macloud.ru](https://macloud.ru/?partner=qby7f922cx)
+* [macloud.ru](https://macloud.ru/?partner=21x4zp5121)
