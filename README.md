@@ -3,7 +3,7 @@
 Скрипт для докачивания зависших торрентов и удаления по критерию размера.
 
 
-_Группа в Telegram: https://t.me/btt_automation_
+[Группа в Telegram](https://t.me/joinchat/Jsb2S7JnaFhlY2Qy)
 
 ## Настройка скрипта
 1. Скачать и устанавить [Python](https://www.python.org/downloads/) последней версии. При установке обязательно добавить запись в **PATH**.
