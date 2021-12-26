@@ -18,5 +18,5 @@
 
 ### _Протестированные VPS_:
 * [cp.zomro.com](https://zomro.com/?from=296803)
-* [vultr.com](https://www.vultr.com/?ref=8883507) - принимает не все карты. Нормально работает с [Tinkoff](https://www.tinkoff.ru/sl/2HFYdv2GfO6) - по [ссылке](https://www.tinkoff.ru/sl/2HFYdv2GfO6) карта с бесплатным обслуживанием.
+* [vultr.com](https://www.vultr.com/?ref=8883507)
 * [macloud.ru](https://macloud.ru/?partner=21x4zp5121)
