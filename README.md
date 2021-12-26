@@ -1,9 +1,7 @@
 # qbittorrent_rechecker
 
-Скрипт для докачивания зависших торрентов и удаления по критерию размера.
+Скрипт для докачивания зависших торрентов и удаления по критерию размера файла (для использования с RSS).
 
-
-[Группа в Telegram (для вступления пишите в личку)](https://t.me/kazakovms)
 
 ## Настройка скрипта
 1. Скачать и устанавить [Python](https://www.python.org/downloads/) последней версии. При установке обязательно добавить запись в **PATH**.
@@ -17,7 +15,6 @@
 
 ### _Donate:_
 * TRX/BTT: TEyaTpdKMCiKyQsokb89oBoLEiyzU1KHRE
-* RUB: [qiwi.com/n/PAIDE724](QIWI)
 
 ### _Протестированные VPS_:
 * [cp.zomro.com](https://zomro.com/?from=296803)
