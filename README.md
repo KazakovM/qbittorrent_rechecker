@@ -13,8 +13,6 @@
 7. Запустить файл **INSTALL.bat** для установки необходимых модулей (только один раз).
 8. Запустить файл **START.bat**.
 
-### _Donate:_
-* TRX/BTT: TEyaTpdKMCiKyQsokb89oBoLEiyzU1KHRE
 
 ### _Протестированные VPS_:
 * [cp.zomro.com](https://zomro.com/?from=296803)
