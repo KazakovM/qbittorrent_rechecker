@@ -13,8 +13,3 @@
 7. Запустить файл **INSTALL.bat** для установки необходимых модулей (только один раз).
 8. Запустить файл **START.bat**.
 
-
-### _Протестированные VPS_:
-* [cp.zomro.com](https://zomro.com/?from=296803)
-* [vultr.com](https://www.vultr.com/?ref=8883507)
-* [macloud.ru](https://macloud.ru/?partner=21x4zp5121)
